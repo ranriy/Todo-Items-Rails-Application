@@ -1,0 +1,44 @@
+<p id="notice"><%= flash[:notice] %></p>
+
+<p>
+  <strong>List name:</strong>
+  <%= @todolist.list_name %>
+</p>
+
+<p>
+  <strong>List due date:</strong>
+  <%= @todolist.list_due_date %>
+</p>
+
+<%= link_to 'Edit', edit_todolist_path(@todolist) %> |
+<%= link_to 'Back', todolists_path %>
+<%= link_to 'New Todo Item', new_todolist_todoitem_path(@todolist) %>
+
+<h1>Listing Todo Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Due date</th>
+      <th>Description</th>
+      <th>Completed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todolist.todoitems.each do |todoitem| %>
+      <tr>
+        <td><%= todoitem.title %></td>
+        <td><%= todoitem.due_date %></td>
+        <td><%= todoitem.description %></td>
+        <td><%= todoitem.completed %></td>
+        <td><%= link_to 'Show', [@todolist, todoitem] %></td>
+        <td><%= link_to 'Destroy', [@todolist, todoitem], method: :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+

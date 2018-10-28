@@ -1,0 +1,24 @@
+<p id="notice"><%= flash[:notice] %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @todoitem.title %>
+</p>
+
+<p>
+  <strong>Due date:</strong>
+  <%= @todoitem.due_date %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @todoitem.description %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @todoitem.completed %>
+</p>
+
+<%= link_to 'Edit', edit_todolist_todoitem_path(@todolist, @todoitem) %> |
+<%= link_to 'Back', @todolist %>

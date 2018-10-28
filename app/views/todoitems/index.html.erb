@@ -1,0 +1,33 @@
+<p id="notice"><%= flash[:notice]  %></p>
+
+<h1>Listing Todoitems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Due date</th>
+      <th>Description</th>
+      <th>Completed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todoitems.each do |todoitem| %>
+      <tr>
+        <td><%= todoitem.title %></td>
+        <td><%= todoitem.due_date %></td>
+        <td><%= todoitem.description %></td>
+        <td><%= todoitem.completed %></td>
+        <td><%= link_to 'Show', todoitem %></td>
+        <td><%= link_to 'Edit', edit_todoitem_path(todoitem) %></td>
+        <td><%= link_to 'Destroy', todoitem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Todoitem', new_todoitem_path %>
