@@ -4,7 +4,7 @@ Web application to manage TodoItems
 
 Models: User, Profile, Todoitem and Todolist(Coursera assignment)
 
-One of the login credentials are as follows:<br />
+One of the login credentials are as follows:__
 username: rich<br />
 password: 123abc<br />
 
