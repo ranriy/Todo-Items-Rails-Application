@@ -4,11 +4,11 @@ Web application to manage TodoItems
 
 Models: User, Profile, Todoitem and Todolist(Coursera assignment)
 
-One of the login credentials is 
+One of the login credentials --
 username: rich
 password: 123abc
 
-Special features:<br />
+Special features:
 1. Todoitem implemented as a nested resource of todolist
 2. Authentication and authorization
 3. Pagination
