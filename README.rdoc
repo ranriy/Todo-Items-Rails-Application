@@ -4,14 +4,14 @@ Web application to manage TodoItems
 
 Models: User, Profile, Todoitem and Todolist(Coursera assignment)
 
-One of the login credentials are as follows:\
-username: rich<br />
-password: 123abc<br />
+One of the login credentials is 
+username: rich
+password: 123abc
 
 Special features:<br />
-1) Todoitem implemented as a nested resource of todolist<br />
-2) Authentication and authorization<br />
-3) Pagination<br />
+1. Todoitem implemented as a nested resource of todolist
+2. Authentication and authorization
+3. Pagination
 
 
 Deployed Link: https://tasks-tocomplete.herokuapp.com/login
