@@ -1,28 +1,16 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Web application to manage TodoItems
 
-Things you may want to cover:
+Models: User, Profile, Todoitem and Todolist(Coursera assignment)
 
-* Ruby version
+One of the login credentials are as follows:
+username: rich
+password: 123abc
 
-* System dependencies
+Special features:
+1) Todoitem implemented as a nested resource of todolist
+2) Authentication and authorization
+3) Pagination
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Deployed Link: https://tasks-tocomplete.herokuapp.com/login
